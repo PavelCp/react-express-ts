@@ -1,5 +1,5 @@
 import { Request, Response, NextFunction, RequestHandler } from "express";
-import { Post } from "../models/todo";
+import { Post } from "../models/post";
 
 const TODOS: Post[] = [];
 
