@@ -3,10 +3,12 @@ import todoRoutes from "./routes/todos";
 import path from "path";
 import { json } from "body-parser";
 import testAPIrouter from "./routes/testAPI";
+import cors from "cors";
 
 const app = express();
 
 app.use(json());
+app.use(cors());
 
 app.use("/", todoRoutes);
 app.use("/api", testAPIrouter);
